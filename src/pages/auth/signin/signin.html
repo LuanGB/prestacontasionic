@@ -1,0 +1,19 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Login</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content>
+	<form (ngSubmit)="loginWithEmail()">
+		<ion-item>
+			<ion-label floating >Email</ion-label>
+			<ion-input type="email" [(ngModel)]="user.email" name="email"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating >Senha</ion-label>
+			<ion-input type="password" [(ngModel)]="user.password" name="password"></ion-input>
+		</ion-item>
+		<button ion-button type="submit" block>Login</button>
+	</form>
+	<button ion-button block (ckick)="loginWithFacebook()">Login com Facebook</button>
+</ion-content>
