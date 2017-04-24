@@ -23,14 +23,14 @@ export class SignIn {
 		{
 			provider: AuthProviders.Password,
 			method: AuthMethods.Password,
-		}).then( () => {this.navCtrl.setRoot(HomePage, {auth: this.af.auth})} );
+		}).then(() => {this.navCtrl.setRoot(HomePage, {auth: this.af.auth})});
 	}
 
-	public loginWithFacebook() {
-		console.log("--------------------------------------------------------------")
+	public loginWithFacebook() : void {
+		console.log("-----------------------------------------------------------");
 		this.af.auth.login({
 			provider: AuthProviders.Facebook,
-			method: AuthMethods.Popup,
-		}).then( () => {this.navCtrl.setRoot(HomePage, {auth: this.af.auth})} );
+			method: AuthMethods.Popup
+		}).then(() => {this.navCtrl.setRoot(HomePage, {auth: this.af.auth})});
 	}
 }

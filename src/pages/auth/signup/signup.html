@@ -1,7 +1,21 @@
 <ion-header>
 	<ion-navbar>
-		<ion-title>Cadastro</ion-title>
+		<ion-title>Cadastre-se</ion-title>
 	</ion-navbar>
 </ion-header>
 <ion-content>
+	<form (ngSubmit)="signUpWithEmail()">
+		<ion-item>
+			<ion-label floating >Email</ion-label>
+			<ion-input type="email" [(ngModel)]="user.email" name="email"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating >Senha</ion-label>
+			<ion-input type="password" [(ngModel)]="user.password" name="password"></ion-input>
+		</ion-item>
+		<button ion-button type="submit" block>Login</button>
+	</form>
+	<p center>ou</p>
+	<button ion-button block (click)="signUpWithFacebook()">Increva-se com o Facebook</button>
+
 </ion-content>
