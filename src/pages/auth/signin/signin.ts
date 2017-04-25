@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { AuthProviders, AngularFire, AuthMethods } from 'angularfire2';
-
+import { AuthService } from '../../../providers/auth-provider';
 import { HomePage } from '../../home/home'
 
 @Component({
@@ -11,26 +10,19 @@ import { HomePage } from '../../home/home'
 export class SignIn {
 	private user = {}
 
-	constructor(public navCtrl: NavController, public af: AngularFire) {
+	constructor(public navCtrl: NavController, public authservice: AuthService) {
 
 	}
 
 	public loginWithEmail() : void {
-		this.af.auth.login({
-			email: this.user["email"],
-			password: this.user["password"],
-		},
-		{
-			provider: AuthProviders.Password,
-			method: AuthMethods.Password,
-		}).then(() => {this.navCtrl.setRoot(HomePage, {auth: this.af.auth})});
+		this.authservice.signInWithEmail(this.user["email"], this.user["password"]).then(() => {
+			this.navCtrl.setRoot(HomePage)
+		});
 	}
 
 	public loginWithFacebook() : void {
-		console.log("-----------------------------------------------------------");
-		this.af.auth.login({
-			provider: AuthProviders.Facebook,
-			method: AuthMethods.Popup
-		}).then(() => {this.navCtrl.setRoot(HomePage, {auth: this.af.auth})});
+		this.authservice.signInWithFacebook().then(() => {
+			this.navCtrl.setRoot(HomePage)
+		});
 	}
 }

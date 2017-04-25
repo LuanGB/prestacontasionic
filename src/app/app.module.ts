@@ -12,7 +12,9 @@ import { Wellcome } from '../pages/wellcome/wellcome'
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { AngularFireModule, AngularFire, FirebaseListObservable } from 'angularfire2';
+import { AngularFireModule } from 'angularfire2';
+
+import { AuthService } from '../providers/auth-provider';
 
 @NgModule({
   declarations: [
@@ -30,8 +32,7 @@ import { AngularFireModule, AngularFire, FirebaseListObservable } from 'angularf
       apiKey: "AIzaSyA2wLG203f-O0KS5iym8GvcCJJFL4KCV2I",
       authDomain: "prestacontas-22b1c.firebaseapp.com",
       databaseURL: "https://prestacontas-22b1c.firebaseio.com",
-      storageBucket: "prestacontas-22b1c.appspot.com",
-      messagingSenderId: "275115459312"
+      storageBucket: "prestacontas-22b1c.appspot.com"
     })
   ],
   bootstrap: [IonicApp],
@@ -46,7 +47,8 @@ import { AngularFireModule, AngularFire, FirebaseListObservable } from 'angularf
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthService
   ]
 })
 export class AppModule {}

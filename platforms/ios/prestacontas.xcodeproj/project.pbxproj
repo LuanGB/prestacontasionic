@@ -22,6 +22,11 @@
 		F57DFFEF15B14791803B6D31 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FE0EB483FF4B31BCB06A05 /* CDVViewController+SplashScreen.m */; };
 		65CCA8CC11284E33A9349BE4 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F0CDB31F394B6D981698D8 /* CDVStatusBar.m */; };
 		893E49501A664E909C8F0A92 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = F36E34AC91D2453BA57C2F61 /* IonicKeyboard.m */; };
+		58FE8EB6EE4440078A592FFA /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9884B790C7544EC2980A9983 /* FacebookConnectPlugin.m */; };
+		70B365086DA24BA5939FE7BD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B110DAAD7392457BB41F2550 /* Bolts.framework */; };
+		E29A2622993E4E29BBE4DE32 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328326F509F64494ADDEAC39 /* FBSDKCoreKit.framework */; };
+		4BCDF96816884B3E9FFAC2F9 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF1FED86EBA49F59BFDEF57 /* FBSDKLoginKit.framework */; };
+		98C9942F94254A358F3BDA13 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BEE7CA1E6042A2B35775F1 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,12 @@
 		438C1432B2F34A2C9C1EB2A3 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		F36E34AC91D2453BA57C2F61 /* IonicKeyboard.m */ = {isa = PBXFileReference; name = "IonicKeyboard.m"; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		7AD9F698F6C74D128DA38F0C /* IonicKeyboard.h */ = {isa = PBXFileReference; name = "IonicKeyboard.h"; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9884B790C7544EC2980A9983 /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; name = "FacebookConnectPlugin.m"; path = "cordova-plugin-facebook4/FacebookConnectPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9755D14F3C8046B18710EBE2 /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; name = "FacebookConnectPlugin.h"; path = "cordova-plugin-facebook4/FacebookConnectPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B110DAAD7392457BB41F2550 /* Bolts.framework */ = {isa = PBXFileReference; name = "Bolts.framework"; path = "prestacontas/Plugins/cordova-plugin-facebook4/Bolts.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		328326F509F64494ADDEAC39 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; name = "FBSDKCoreKit.framework"; path = "prestacontas/Plugins/cordova-plugin-facebook4/FBSDKCoreKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		BAF1FED86EBA49F59BFDEF57 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; name = "FBSDKLoginKit.framework"; path = "prestacontas/Plugins/cordova-plugin-facebook4/FBSDKLoginKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		E7BEE7CA1E6042A2B35775F1 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; name = "FBSDKShareKit.framework"; path = "prestacontas/Plugins/cordova-plugin-facebook4/FBSDKShareKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +93,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				70B365086DA24BA5939FE7BD /* Bolts.framework in Frameworks */,
+				E29A2622993E4E29BBE4DE32 /* FBSDKCoreKit.framework in Frameworks */,
+				4BCDF96816884B3E9FFAC2F9 /* FBSDKLoginKit.framework in Frameworks */,
+				98C9942F94254A358F3BDA13 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +167,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B110DAAD7392457BB41F2550 /* Bolts.framework */,
+				328326F509F64494ADDEAC39 /* FBSDKCoreKit.framework */,
+				BAF1FED86EBA49F59BFDEF57 /* FBSDKLoginKit.framework */,
+				E7BEE7CA1E6042A2B35775F1 /* FBSDKShareKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,6 +208,8 @@
 				438C1432B2F34A2C9C1EB2A3 /* CDVStatusBar.h */,
 				F36E34AC91D2453BA57C2F61 /* IonicKeyboard.m */,
 				7AD9F698F6C74D128DA38F0C /* IonicKeyboard.h */,
+				9884B790C7544EC2980A9983 /* FacebookConnectPlugin.m */,
+				9755D14F3C8046B18710EBE2 /* FacebookConnectPlugin.h */,
 			);
 			name = Plugins;
 			path = "prestacontas/Plugins";
@@ -307,6 +328,7 @@
 				F57DFFEF15B14791803B6D31 /* CDVViewController+SplashScreen.m in Sources */,
 				65CCA8CC11284E33A9349BE4 /* CDVStatusBar.m in Sources */,
 				893E49501A664E909C8F0A92 /* IonicKeyboard.m in Sources */,
+				58FE8EB6EE4440078A592FFA /* FacebookConnectPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +364,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				PRODUCT_NAME = "prestacontas";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"prestacontas/Plugins/cordova-plugin-facebook4\"",
+					"\"prestacontas/Plugins/cordova-plugin-facebook4\"",
+					"\"prestacontas/Plugins/cordova-plugin-facebook4\"",
+					"\"prestacontas/Plugins/cordova-plugin-facebook4\"",
+				);
 			};
 			name = Debug;
 		};
@@ -364,6 +393,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				PRODUCT_NAME = "prestacontas";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"prestacontas/Plugins/cordova-plugin-facebook4\"",
+					"\"prestacontas/Plugins/cordova-plugin-facebook4\"",
+					"\"prestacontas/Plugins/cordova-plugin-facebook4\"",
+					"\"prestacontas/Plugins/cordova-plugin-facebook4\"",
+				);
 			};
 			name = Release;
 		};

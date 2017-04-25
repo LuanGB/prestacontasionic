@@ -8,6 +8,7 @@
 </ion-header>
 
 <ion-content>
+<h1>Bem vindo {{authService.displayName()}} </h1>
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
       <ion-icon [name]="item.icon" item-left></ion-icon>
