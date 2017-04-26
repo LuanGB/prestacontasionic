@@ -11,10 +11,11 @@ import { Wellcome } from '../pages/wellcome/wellcome'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Facebook } from '@ionic-native/facebook'
+import { AuthService } from '../providers/auth-provider';
 
 import { AngularFireModule } from 'angularfire2';
 
-import { AuthService } from '../providers/auth-provider';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { AuthService } from '../providers/auth-provider';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthService
+    AuthService,
+    Facebook
   ]
 })
 export class AppModule {}

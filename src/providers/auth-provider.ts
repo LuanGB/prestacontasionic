@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Facebook } from 'ionic-native';
-import { Platform } from 'ionic-angular';
 import { AuthProviders, AngularFireAuth, FirebaseAuthState, AuthMethods } from 'angularfire2';
+import * as firebase from 'firebase';
+import { Platform } from 'ionic-angular';
+import { Facebook } from '@ionic-native/facebook';
 
 @Injectable()
 export class AuthService {
   private authState: FirebaseAuthState;
 
-  constructor(public auth$: AngularFireAuth, public platform: Platform) {
+  constructor(public auth$: AngularFireAuth, private platform: Platform, public face: Facebook) {
     this.authState = auth$.getAuth();
     auth$.subscribe((state: FirebaseAuthState) => {
       this.authState = state;
@@ -18,47 +19,39 @@ export class AuthService {
     return this.authState !== null;
   }
 
-signInWithFacebook(): firebase.Promise<FirebaseAuthState> {
-  if (this.platform.is('cordova')) {
-    Facebook.login(['public_profile', 'email']).then(facebookData => {
-      let provider = firebase.auth.FacebookAuthProvider.credential(facebookData.authResponse.accessToken);
-      console.log('facebook accessToken: ' + facebookData.authResponse.accessToken);
-      return firebase.auth().signInWithCredential(provider);
-    });
-  } else {
+  signInWithFacebook(): firebase.Promise<any> {
+    if (this.platform.is('cordova')) {
+      return this.face.login(['email', 'public_profile']).then(res => {
+        const facebookCredential = firebase.auth.FacebookAuthProvider.credential(res.authResponse.accessToken);
+        return firebase.auth().signInWithCredential(facebookCredential);
+      });
+    } else {
+      return this.auth$.login({
+        provider: AuthProviders.Facebook,
+        method: AuthMethods.Popup
+      });
+    }
 
-    return this.auth$.login({
-      provider: AuthProviders.Facebook,
-      method: AuthMethods.Popup
-    });
   }
-}
-
-  //signInWithFacebook(): firebase.Promise<FirebaseAuthState> {
-  //  return this.auth$.login({
-  //    provider: AuthProviders.Facebook,
-  //    method: AuthMethods.Popup
-  //  });
-  //}
 
   signInWithEmail(user, password): firebase.Promise<FirebaseAuthState> {
     return this.auth$.login({
-			email: user,
-			password: password,
-		},
-		{
-			provider: AuthProviders.Password,
-			method: AuthMethods.Password,
-		});
+      email: user,
+      password: password,
+    },
+    {
+      provider: AuthProviders.Password,
+      method: AuthMethods.Password,
+    });
   }
 
-  signOut(): Promise<void> {
+  signOut(): firebase.Promise<void> {
     return this.auth$.logout();
   }
 
   displayName(): string {
     if (this.authState != null) {
-      return this.authState.facebook.displayName;
+      return this.authState.auth.displayName;
     } else {
       return '';
     }
