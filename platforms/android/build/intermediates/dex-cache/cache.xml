@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/luan/Projetos/prestacontasionic/platforms/android/build/intermediates/exploded-aar/com.android.support/customtabs/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="/home/luan/Projetos/prestacontasionic/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-customtabs-23.4.0_2de13ef7811758a81b0b925f77d943e9e8bc7a31.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/luan/Projetos/prestacontasionic/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/home/luan/Projetos/prestacontasionic/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_daddd7ee1870cdd82f33a6e8bc08d34d1ac2ae30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/luan/Projetos/prestacontasionic/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8a65322241c27ffd7335cc29651ff9c028d4c7b7">
+        <dex dex="/home/luan/Projetos/prestacontasionic/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_2905328e1b1d5dba42a80e45087ad64144e7b5d0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/luan/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/home/luan/Projetos/prestacontasionic/platforms/android/build/intermediates/pre-dexed/debug/bolts-applinks-1.4.0_6f3d7db87c57e061e541bea637932bbbf3c9cce1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/luan/Projetos/prestacontasionic/platforms/android/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="42a3ae86dd3ae2876d3e95c2e6e104ae57a50a65">
+        <dex dex="/home/luan/Projetos/prestacontasionic/platforms/android/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-android-sdk-4.14.1_88482828a943492efc3d91a6c9ae1f64744f4f68.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/luan/Projetos/prestacontasionic/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/home/luan/Projetos/prestacontasionic/platforms/android/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_5ec00b88b9f07dbc1d9f8494ddd43733e9bf6000.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/luan/Projetos/prestacontasionic/platforms/android/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="/home/luan/Projetos/prestacontasionic/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.4.0_d358cd3e561ee51cc9749c5cc14152890f7f8fc8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/luan/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/home/luan/Projetos/prestacontasionic/platforms/android/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_225f63f912f31a6adfaa33f1f4f99508ba57e66f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/usr/lib/android-sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/home/luan/Projetos/prestacontasionic/platforms/android/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_cc52a825abb1611b61af133c6bef16ed16de183e.jar" />
+    </item>
+
+</items>
